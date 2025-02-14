@@ -1823,7 +1823,7 @@ input, select, textarea {
 				color: #ffffff;
 				top: -2.75em;
 				font-size: 0.3em;
-				height: 2.25em;
+				height: auto; /* Modified from 2.25em */
 				line-height: 2.25em;
 				left: 50%;
 				opacity: 0;
