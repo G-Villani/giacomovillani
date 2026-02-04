@@ -1,0 +1,231 @@
+<!DOCTYPE HTML>
+<html>
+<head>
+	<title>ARTICLE TITLE | Giacomo Villani</title>
+	<meta charset="utf-8" />
+	<meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no" />
+
+	<meta name="description" content="Short description of the article">
+	<meta name="keywords" content="keywords, separated, by, commas">
+	<meta name="author" content="Giacomo Villani">
+
+	<link rel="stylesheet" href="assets/css/main.css" />
+	<noscript><link rel="stylesheet" href="assets/css/noscript.css" /></noscript>
+
+	<style>
+		/* Global */
+		body {
+			background-color: #000;
+			color: #ffffff;
+		}
+
+		.article-wrapper {
+			max-width: 900px;
+			margin: 0 auto;
+			padding: 2.5em 2em;
+			background-color: #000;
+		}
+
+		/* Header */
+		.article-header {
+			text-align: center;
+			margin-bottom: 3em;
+			padding-bottom: 2em;
+			border-bottom: 2px solid rgba(255,255,255,0.15);
+		}
+
+		.article-header h1 {
+			font-size: 2.3em;
+			line-height: 1.3;
+			margin-bottom: 0.6em;
+		}
+
+		.article-subtitle {
+			font-size: 1.1em;
+			color: #cccccc;
+			font-style: italic;
+			margin-bottom: 1.2em;
+		}
+
+		.article-meta {
+			font-size: 0.9em;
+			color: #aaaaaa;
+		}
+
+		.article-meta .author {
+			color: #4acaa8;
+			font-weight: bold;
+		}
+
+		/* Content */
+		.article-content {
+			font-size: 1.05em;
+			line-height: 1.8;
+		}
+
+		.article-content p {
+			margin-bottom: 1.5em;
+		}
+
+		/* Figures */
+		.figure {
+			margin: 2.5em 0;
+			padding: 1.5em;
+			background: rgba(255,255,255,0.03);
+			border-radius: 8px;
+			border-left: 4px solid #4acaa8;
+		}
+
+		.figure img {
+			width: 100%;
+			border-radius: 4px;
+		}
+
+		.figure-caption {
+			margin-top: 1em;
+			font-size: 0.95em;
+			color: #cccccc;
+			font-style: italic;
+			line-height: 1.6;
+		}
+
+		.figure-caption strong {
+			color: #4acaa8;
+			font-weight: bold;
+		}
+
+		/* Highlight box (optional) */
+		.highlight-box {
+			margin: 3em 0;
+			padding: 2em;
+			background: rgba(74,202,168,0.08);
+			border-radius: 8px;
+			text-align: center;
+		}
+
+		.highlight-box h3 {
+			color: #4acaa8;
+			margin-bottom: 1em;
+		}
+
+		/* Navigation links */
+		.back-link {
+			display: inline-block;
+			margin-bottom: 2em;
+			color: #4acaa8;
+			font-weight: bold;
+			text-decoration: none;
+		}
+
+		.back-link:hover {
+			color: #5fd4b8;
+		}
+
+		/* Footer */
+		.article-footer {
+			margin-top: 4em;
+			padding-top: 2em;
+			border-top: 2px solid rgba(255,255,255,0.15);
+			text-align: center;
+			font-size: 0.9em;
+			color: #aaaaaa;
+		}
+
+		/* Mobile */
+		@media screen and (max-width: 736px) {
+
+			.article-wrapper {
+				padding: 1.5em 1.2em;
+			}
+
+			.article-header h1 {
+				font-size: 1.7em;
+			}
+
+			.article-subtitle {
+				font-size: 1em;
+			}
+
+			.article-content {
+				font-size: 1.1em;
+				line-height: 1.75;
+			}
+
+			.figure {
+				padding: 1em;
+			}
+
+			.figure-caption {
+				font-size: 0.9em;
+			}
+		}
+	</style>
+</head>
+
+<body class="is-preload">
+	<div class="article-wrapper">
+
+		<a href="index.html" class="back-link">← Back to Homepage</a>
+
+		<article>
+
+			<header class="article-header">
+				<h1>ARTICLE TITLE</h1>
+				<p class="article-subtitle">
+					Article subtitle goes here
+				</p>
+				<p class="article-meta">
+					By <span class="author">Giacomo Villani</span> · Month Year
+				</p>
+			</header>
+
+			<div class="article-content">
+
+				<p>
+					Introductory paragraph of the article. This should hook the reader and
+					introduce the main topic in a clear but accessible way.
+				</p>
+
+				<div class="figure">
+					<img src="images/example.png" alt="Figure description">
+					<p class="figure-caption">
+						<strong>Figure 1.</strong> Caption describing the figure.
+					</p>
+				</div>
+
+				<p>
+					Main body text continues here. You can add as many paragraphs and figures
+					as needed.
+				</p>
+
+				<div class="highlight-box">
+					<h3>Optional Highlight</h3>
+					<p>
+						Use this box for links, take-home messages, or references.
+					</p>
+				</div>
+
+			</div>
+		</article>
+
+		<a href="index.html" class="back-link">← Back to Homepage</a>
+
+		<footer class="article-footer">
+			<p>
+				Content licensed under
+				<a href="https://creativecommons.org/licenses/by-nc-sa/3.0/" target="_blank">
+					CC BY-NC-SA 3.0
+				</a>
+			</p>
+			<p>Giacomo Villani · University of Pavia</p>
+		</footer>
+
+	</div>
+
+	<script src="assets/js/jquery.min.js"></script>
+	<script src="assets/js/browser.min.js"></script>
+	<script src="assets/js/breakpoints.min.js"></script>
+	<script src="assets/js/util.js"></script>
+	<script src="assets/js/main.js"></script>
+</body>
+</html>
