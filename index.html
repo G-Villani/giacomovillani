@@ -18,17 +18,23 @@
 	</head>
 	<body class="is-preload">
 
+		<!-- Language Switcher -->
+		<div id="lang-switcher" style="position:fixed; top:15px; right:15px; z-index:9999; display:flex; gap:8px;">
+			<span id="flag-en" style="cursor:pointer; font-size:22px; opacity:1;" title="English">🇬🇧</span>
+			<span id="flag-it" style="cursor:pointer; font-size:22px; opacity:0.4;" title="Italiano">🇮🇹</span>
+		</div>
+
 		<!-- Wrapper -->
 		<div id="wrapper">
 
 			<!-- Nav -->
 			<nav id="nav">
-				<a href="#" class="icon solid fa-home"><span>Home</span></a>
-				<a href="#research" class="icon solid fa-folder"><span>Research</span></a>
-				<a href="#scientific-publications" class="icon solid fa-dna"><span>Scientific Publications</span></a>
-				<a href="#literary-publications" class="icon solid fa-seedling"><span>Literary Publications</span></a>
-				<a href="#honours" class="icon solid fa-trophy"><span>Honours and Awards</span></a>
-				<a href="#contact" class="icon solid fa-envelope"><span>Contact</span></a>
+				<a href="#" class="icon solid fa-home"><span data-i18n="nav_home">Home</span></a>
+				<a href="#research" class="icon solid fa-folder"><span data-i18n="nav_research">Research</span></a>
+				<a href="#scientific-publications" class="icon solid fa-dna"><span data-i18n="nav_scipub">Scientific Publications</span></a>
+				<a href="#literary-publications" class="icon solid fa-seedling"><span data-i18n="nav_litpub">Literary Publications</span></a>
+				<a href="#honours" class="icon solid fa-trophy"><span data-i18n="nav_honours">Honours and Awards</span></a>
+				<a href="#contact" class="icon solid fa-envelope"><span data-i18n="nav_contact">Contact</span></a>
 			</nav>
 
 			<!-- Main -->
@@ -38,11 +44,11 @@
 				<article id="home" class="panel intro">
 					<header>
 						<h1>Giacomo Villani</h1>
-						<p>PhD student in Archaeogenomics, Writer</p>
+						<p data-i18n="subtitle">PhD student in Archaeogenomics, Writer</p>
 						<p style="font-size: 18px;">University of Pavia</p>
 					</header>
 					<a href="#research" class="jumplink pic">
-						<span class="arrow icon solid fa-chevron-right"><span>See my research</span></span>
+						<span class="arrow icon solid fa-chevron-right"><span data-i18n="see_research">See my research</span></span>
 						<img src="images/me.jpg" alt="" />
 					</a>
 				</article>
@@ -50,120 +56,118 @@
 				<!-- Research -->
 				<article id="research" class="panel">
 					<header>
-						<h2>Research</h2>
+						<h2 data-i18n="research_title">Research</h2>
 					</header>
-					<p>
+					<p data-i18n="research_p1">
 						I am a PhD student specializing in population genomics, both on nuclear genome and mitochondrial DNA.<br> 
 						My interests are:<br>
 						- The evolution of humankind from our common ancestor with chimpanzee and bonobo;<br>
 						- Our history as humans after our exit from Africa in forming our current populations and diversity.<br>
 					</p>
-					<p>
+					<p data-i18n="research_p2">
 						To do that I explore the maternal history that we can infer from our mitochondria, and how current mtDNA lineages have spread in various populations. 
 						To uncover the general history of a population instead, I focus on patterns of kinship, ancestry, and geographic distribution that I can infer from complete genomes 
 						by combining cutting-edge bioinformatics tools with statistical analysis.
 					</p>
-					<p>
+					<p data-i18n="research_p3">
 						My aim is to uncover the connections between genetic data and human history, contributing to our understanding of evolution, migration and not recorded history.
 					</p>
+
 					<!-- Networks and Memberships -->
 					<header>
-					<h3>Networks and Memberships</h3>
+						<h3 data-i18n="networks_title">Networks and Memberships</h3>
 					</header>
 					<ul>
-					<li>
-					<b>International Society for Biomolecular Archaeology</b> (England)<br>
-					<span style="font-size: 14px;">Member · 29/03/2025 – Current</span><br>
-					<a href="https://www.isbarch.org" target="_blank">https://www.isbarch.org</a>
-					</li>
-					<li>
-					<b>Italian Society for Evolutionary Biology</b> (Fano, Italy)<br>
-					<span style="font-size: 14px;">Member · 08/05/2025 – Current</span><br>
-					<a href="https://www.sibe-iseb.it" target="_blank">https://www.sibe-iseb.it</a>
-					</li>
-					<li>
-					<b>Society for Molecular Biology &amp; Evolution</b><br>
-					<span style="font-size: 14px;">Member · 02/02/2026 – Current</span><br>
-					<a href="https://www.smbe.org/" target="_blank">https://www.smbe.org</a>
-					</li>
+						<li>
+							<b>International Society for Biomolecular Archaeology</b> (England)<br>
+							<span style="font-size: 14px;" data-i18n="member_isbarch">Member · 29/03/2025 – Current</span><br>
+							<a href="https://www.isbarch.org" target="_blank">https://www.isbarch.org</a>
+						</li>
+						<li>
+							<b>Italian Society for Evolutionary Biology</b> (Fano, Italy)<br>
+							<span style="font-size: 14px;" data-i18n="member_sibe">Member · 08/05/2025 – Current</span><br>
+							<a href="https://www.sibe-iseb.it" target="_blank">https://www.sibe-iseb.it</a>
+						</li>
+						<li>
+							<b>Society for Molecular Biology &amp; Evolution</b><br>
+							<span style="font-size: 14px;" data-i18n="member_smbe">Member · 02/02/2026 – Current</span><br>
+							<a href="https://www.smbe.org/" target="_blank">https://www.smbe.org</a>
+						</li>
 					</ul>
+
 					<!-- Conferences and Seminars -->
-<header>
-	<h3>Conferences and Seminars</h3>
-</header>
+					<header>
+						<h3 data-i18n="conferences_title">Conferences and Seminars</h3>
+					</header>
+					<ul>
+						<li>
+							<span style="font-size: 14px;">26/08/2025 – 29/08/2025</span><br>
+							<b>11th International Symposium on Biomolecular Archaeology (ISBA11)</b>, Turin, Italy<br>
+							<i data-i18n="poster_presentation">Poster presentation</i><br>
+							Villani, G., Rambaldi Migliore, N., Tommasi, A., Cardinali, I., Somenzi, E., Di Gerlando, R., Partel, E., 
+							Chero Osorio, A.M., Martellozzo, N., Raffaetà, R., Colli, L., Olivieri, A., Hauffe, H.C., Lancioni, H., 
+							Ajmone Marsan, P., Torroni, A., Achilli, A.<br>
+							<b>Deciphering the genomic history of the Rendena Valley people.</b><br>
+							<a href="https://www.isba11.com/" target="_blank">https://www.isba11.com</a>
+						</li>
+					</ul>
 
-<ul>
-	<li>
-		<span style="font-size: 14px;">26/08/2025 – 29/08/2025</span><br>
-		<b>11th International Symposium on Biomolecular Archaeology (ISBA11)</b>, Turin, Italy<br>
-		<i>Poster presentation</i><br>
-		Villani, G., Rambaldi Migliore, N., Tommasi, A., Cardinali, I., Somenzi, E., Di Gerlando, R., Partel, E., 
-		Chero Osorio, A.M., Martellozzo, N., Raffaetà, R., Colli, L., Olivieri, A., Hauffe, H.C., Lancioni, H., 
-		Ajmone Marsan, P., Torroni, A., Achilli, A.<br>
-		<b>Deciphering the genomic history of the Rendena Valley people.</b><br>
-		<a href="https://www.isba11.com/" target="_blank">https://www.isba11.com</a>
-	</li>
-</ul>
-<!-- Courses and Advanced Training -->
-<header>
-	<h3>Courses and Advanced Training</h3>
-</header>
-
-<ul>
-	<li>
-		<span style="font-size: 14px;">14/02/2023 – 27/02/2023</span><br>
-		<b>Bioinformatics and Deep Learning for Biodata Analysis</b><br>
-		24th Bologna Winter School, Alma Mater Studiorum – University of Bologna
-	</li>
-
-	<li>
-		<span style="font-size: 14px;">19/08/2024 – 23/08/2024</span><br>
-		<b>Summer Course in Analysis of High Throughput Data for Population Genetics</b><br>
-		Department of Biology, University of Copenhagen<br>
-		<span style="font-size: 14px;">
-			Copenhagen, Denmark · 4 ECTS · Field: Genomics
-		</span><br>
-		<a href="https://website.popgen.dk/summer/" target="_blank">https://website.popgen.dk/summer/</a>
-	</li>
-
-	<li>
-		<span style="font-size: 14px;">23/06/2025 – 29/06/2025</span><br>
-		<b>EMBO Practical Course – Population Genomics: Background and Tools</b><br>
-		Castellammare di Stabia, Napoli, Italy<br>
-		<i>Poster presentation at the course</i><br>
-		Villani, G., Rambaldi Migliore, N., Tommasi, A., Cardinali, I., Somenzi, E., Di Gerlando, R., Partel, E., 
-		Chero Osorio, A.M., Martellozzo, N., Raffaetà, R., Colli, L., Olivieri, A., Hauffe, H.C., Lancioni, H., 
-		Ajmone Marsan, P., Torroni, A., Achilli, A.<br>
-		<b>Connections and isolation in the alpine valley of Rendena, Trentino Alto Adige/Südtirol, Italy.</b><br>
-		<a href="https://meetings.embo.org/event/25-pop-genomics" target="_blank">
-			https://meetings.embo.org/event/25-pop-genomics
-		</a>
-	</li>
-</ul>
-
+					<!-- Courses and Advanced Training -->
+					<header>
+						<h3 data-i18n="courses_title">Courses and Advanced Training</h3>
+					</header>
+					<ul>
+						<li>
+							<span style="font-size: 14px;">14/02/2023 – 27/02/2023</span><br>
+							<b>Bioinformatics and Deep Learning for Biodata Analysis</b><br>
+							24th Bologna Winter School, Alma Mater Studiorum – University of Bologna
+						</li>
+						<li>
+							<span style="font-size: 14px;">19/08/2024 – 23/08/2024</span><br>
+							<b>Summer Course in Analysis of High Throughput Data for Population Genetics</b><br>
+							Department of Biology, University of Copenhagen<br>
+							<span style="font-size: 14px;">
+								Copenhagen, Denmark · 4 ECTS · Field: Genomics
+							</span><br>
+							<a href="https://website.popgen.dk/summer/" target="_blank">https://website.popgen.dk/summer/</a>
+						</li>
+						<li>
+							<span style="font-size: 14px;">23/06/2025 – 29/06/2025</span><br>
+							<b>EMBO Practical Course – Population Genomics: Background and Tools</b><br>
+							Castellammare di Stabia, Napoli, Italy<br>
+							<i data-i18n="poster_course">Poster presentation at the course</i><br>
+							Villani, G., Rambaldi Migliore, N., Tommasi, A., Cardinali, I., Somenzi, E., Di Gerlando, R., Partel, E., 
+							Chero Osorio, A.M., Martellozzo, N., Raffaetà, R., Colli, L., Olivieri, A., Hauffe, H.C., Lancioni, H., 
+							Ajmone Marsan, P., Torroni, A., Achilli, A.<br>
+							<b>Connections and isolation in the alpine valley of Rendena, Trentino Alto Adige/Südtirol, Italy.</b><br>
+							<a href="https://meetings.embo.org/event/25-pop-genomics" target="_blank">
+								https://meetings.embo.org/event/25-pop-genomics
+							</a>
+						</li>
+					</ul>
 				</article>
 
 				<!-- Scientific Publications -->
 				<article id="scientific-publications" class="panel">
 					<header>
-						<h2>Scientific Publications</h2>
-					</header>
-						<ul>
-							<li>
-								<b>Anna Tommasi<sup>†</sup></b>, <b>Rajiv Boscolo Agostini<sup>†</sup></b>, <b>Giacomo Villani<sup>†</sup></b>, Rambaldi Migliore, N., Vizzari, M.T., Cardinali, I., Di Gerlando, R., Nicolini, V., Sorasio, G., Santos, P., et al. <b>“Fifteen millennia of human mitogenome evolution in Sicily.”</b> <i>Science Advances</i> 11, eady1674 (2025).<br>
-								<a href="https://doi.org/10.1126/sciadv.ady1674" target="_blank"> https://doi.org/10.1126/sciadv.ady1674 </a>
-							</li>
-						</ul>
-						<p style="font-size: 14px; margin-top: -10px;">† These authors contributed equally to this work.</p>
-
-					<!-- Third Mission -->
-					<header>
-						<h3>Third Mission</h3>
+						<h2 data-i18n="scipub_title">Scientific Publications</h2>
 					</header>
 					<ul>
 						<li>
-							Villani, Giacomo. <b>"Sicily: from fifteen millennia ago to present"</b>. Divulgative article, nov. 2025.<br>
-							<a href="sicily-article.html">Read the full article</a>
+							<b>Anna Tommasi<sup>†</sup></b>, <b>Rajiv Boscolo Agostini<sup>†</sup></b>, <b>Giacomo Villani<sup>†</sup></b>, Rambaldi Migliore, N., Vizzari, M.T., Cardinali, I., Di Gerlando, R., Nicolini, V., Sorasio, G., Santos, P., et al. <b>"Fifteen millennia of human mitogenome evolution in Sicily."</b> <i>Science Advances</i> 11, eady1674 (2025).<br>
+							<a href="https://doi.org/10.1126/sciadv.ady1674" target="_blank"> https://doi.org/10.1126/sciadv.ady1674 </a>
+						</li>
+					</ul>
+					<p style="font-size: 14px; margin-top: -10px;" data-i18n="equal_contrib">† These authors contributed equally to this work.</p>
+
+					<!-- Third Mission -->
+					<header>
+						<h3 data-i18n="thirdmission_title">Third Mission</h3>
+					</header>
+					<ul>
+						<li>
+							Villani, Giacomo. <b data-i18n="sicily_title">"Sicily: from fifteen millennia ago to present"</b>. <span data-i18n="divulgative_article">Divulgative article</span>, nov. 2025.<br>
+							<a href="sicily-article.html" data-i18n="read_article">Read the full article</a>
 						</li>
 						<li>
 							Villani, Giacomo. <b>"Un gambero per il Madagascar"</b>. Sapere, n. 6, feb. 2023, pp. 46–47. ISBN: 9788822094599.
@@ -174,27 +178,27 @@
 				<!-- Literary Publications -->
 				<article id="literary-publications" class="panel">
 					<header>
-						<h2>Literary Publications</h2>
+						<h2 data-i18n="litpub_title">Literary Publications</h2>
 					</header>
 					<ul>
-						<li> 
-								<b>IMAGINE A UNIVERSE, INFINITE OR NOT, AS YOU WISH</b> – Anthology of stories from the “Premio Fredric Brown, 1st Edition” VOL. 2.  
-							<br> Various authors.  
-							<br> ISBN: 9791280815361  
-							<br> Pages: 288  
-							<br> Story: <b>"The Cloud Climber"</b>.
+						<li>
+							<b data-i18n="anthology_title">IMAGINE A UNIVERSE, INFINITE OR NOT, AS YOU WISH</b> – <span data-i18n="anthology_desc">Anthology of stories from the "Premio Fredric Brown, 1st Edition" VOL. 2.</span>
+							<br> <span data-i18n="various_authors">Various authors.</span>
+							<br> ISBN: 9791280815361
+							<br> <span data-i18n="pages">Pages</span>: 288
+							<br> <span data-i18n="story_label">Story</span>: <b data-i18n="story_title">"The Cloud Climber"</b>.
 						</li>
 					</ul>
 
 					<!-- Creative Writing -->
 					<header>
-						<h3>Creative Writing</h3>
+						<h3 data-i18n="creative_title">Creative Writing</h3>
 					</header>
 					<ul>
 						<li>
-							<b>Fiction award Monica Frascari:</b> honour mention (2015 and 2016).  
-							<br> <b>National literary prize "Terra di Guido Cavani":</b> junior section, fourth place (2016).  
-							<br> <b>Participation in IV Certamen of Italian History and Literature of Venaria Reale</b> (2017, essay).  
+							<b data-i18n="monica_frascari">Fiction award Monica Frascari:</b> <span data-i18n="honour_mention">honour mention</span> (2015 and 2016).
+							<br> <b data-i18n="literary_prize">National literary prize "Terra di Guido Cavani":</b> <span data-i18n="junior_fourth">junior section, fourth place</span> (2016).
+							<br> <b data-i18n="certamen">Participation in IV Certamen of Italian History and Literature of Venaria Reale</b> (2017, essay).
 						</li>
 					</ul>
 				</article>
@@ -202,72 +206,182 @@
 				<!-- Honours and Awards -->
 				<article id="honours" class="panel">
 					<header>
-						<h2>Honours and Awards</h2>
+						<h2 data-i18n="honours_title">Honours and Awards</h2>
 					</header>
 					<ul>
-						<li> 
-							<b>Degree Merit Award</b> – Alma Mater Studiorum University of Bologna (04/12/2023, academic year 2021/2022).
+						<li>
+							<b data-i18n="degree_award">Degree Merit Award</b> – Alma Mater Studiorum University of Bologna (04/12/2023, academic year 2021/2022).
 						</li>
 					</ul>
 				</article>
-<!-- Contact -->
-							<article id="contact" class="panel">
-								<header>
-									<h2>Contacts</h2>
-								</header>
-								<p>
-									<b>Institution</b>
-									<br> Department of Biology and Biotechnology "L. Spallanzani"
-									<br> Via Adolfo Ferrata 5, 27100 Pavia
-									<br> University of Pavia
-									<br> Italy
-									<br><br>
-									<b>Email</b>
-									<br><a href="mailto: giacomo.villani02@universitadipavia.it">giacomo.villani02@universitadipavia.it</a>
-									<br><br>
-									<b>Socials</b>
-									<br>
-									<a href="https://scholar.google.com/citations?hl=it&user=kIDHK0EAAAAJ"><img src="https://upload.wikimedia.org/wikipedia/commons/c/c7/Google_Scholar_logo.svg" alt="Google Scholar" style="background:transparent;width:25px;height:25px"></a>
-									<a href="https://orcid.org/0009-0000-5354-7024"><img src="images/icon_OrcID.png" alt="OrcID" style="background:transparent;width:25px;height:25px"></a>
-									<a href="https://www.linkedin.com/in/giacomo-villani-095934267/"><img src="https://upload.wikimedia.org/wikipedia/commons/8/81/LinkedIn_icon.svg" alt="LinkedIn" style="background:transparent;width:30px;height:25px"></a>
-									<a href="https://www.researchgate.net/profile/Giacomo-Villani"><img src="https://upload.wikimedia.org/wikipedia/commons/5/5e/ResearchGate_icon_SVG.svg" alt="ResearchGate" style="background:transparent;width:30px;height:25px"></a>
-									<a href="https://x.com/jk_the_villain"><img src="https://upload.wikimedia.org/wikipedia/commons/6/6f/Logo_of_Twitter.svg" alt="Twitter/X" style="background:transparent;width:30px;height:25px"></a>
-									<a href="https://bsky.app/profile/jack-the-villain.bsky.social"><img src="https://upload.wikimedia.org/wikipedia/commons/7/7a/Bluesky_Logo.svg" alt="Bluesky" style="background:transparent;width:30px;height:25px"></a>
-								</p>
-								<img src="images/Italy_map_high_res.png" alt="Map of Italy showing my research connections" class="map-image">
-							</article>
 
-					</div>
-
-					</div>
-
-				<!-- Footer -->
-					<div id="footer">
-						<ul class="copyright">
-							<li>Content licensed under <a href="https://creativecommons.org/licenses/by-nc-sa/3.0/" target="_blank">CC BY-NC-SA 3.0</a>.</li>
-							<li>Design: <a href="http://html5up.net">HTML5 UP</a></li>
-						</ul>
-					<p class="motto">Memento: homo eras et es et eris</p>
-					</div>
-				<!-- Contatore visitatori -->
-					<!--<div style="text-align: right; font-size: 11px; opacity: 0.5;">-->
-						<div id="sfcfungl1awba4c8hl44cz1kyxux74b3wpe"></div>
-							<script type="text/javascript" src="https://counter6.optistats.ovh/private/counter.js?c=fungl1awba4c8hl44cz1kyxux74b3wpe&FCS_rest=tabRB"></script>
-							<noscript><a href="https://www.contatoreaccessi.com" title="contatore internet"><img src="https://counter6.optistats.ovh/private/contatoreaccessi.php?c=fungl1awba4c8hl44cz1kyxux74b3wpe" border="0" alt="contatore internet"></a></noscript>
-						
-					<!--</div>-->
+				<!-- Contact -->
+				<article id="contact" class="panel">
+					<header>
+						<h2 data-i18n="contacts_title">Contacts</h2>
+					</header>
+					<p>
+						<b data-i18n="institution_label">Institution</b>
+						<br> Department of Biology and Biotechnology "L. Spallanzani"
+						<br> Via Adolfo Ferrata 5, 27100 Pavia
+						<br> University of Pavia
+						<br> Italy
+						<br><br>
+						<b>Email</b>
+						<br><a href="mailto:giacomo.villani02@universitadipavia.it">giacomo.villani02@universitadipavia.it</a>
+						<br><br>
+						<b data-i18n="socials_label">Socials</b>
+						<br>
+						<a href="https://scholar.google.com/citations?hl=it&user=kIDHK0EAAAAJ"><img src="https://upload.wikimedia.org/wikipedia/commons/c/c7/Google_Scholar_logo.svg" alt="Google Scholar" style="background:transparent;width:25px;height:25px"></a>
+						<a href="https://orcid.org/0009-0000-5354-7024"><img src="images/icon_OrcID.png" alt="OrcID" style="background:transparent;width:25px;height:25px"></a>
+						<a href="https://www.linkedin.com/in/giacomo-villani-095934267/"><img src="https://upload.wikimedia.org/wikipedia/commons/8/81/LinkedIn_icon.svg" alt="LinkedIn" style="background:transparent;width:30px;height:25px"></a>
+						<a href="https://www.researchgate.net/profile/Giacomo-Villani"><img src="https://upload.wikimedia.org/wikipedia/commons/5/5e/ResearchGate_icon_SVG.svg" alt="ResearchGate" style="background:transparent;width:30px;height:25px"></a>
+						<a href="https://x.com/jk_the_villain"><img src="https://upload.wikimedia.org/wikipedia/commons/6/6f/Logo_of_Twitter.svg" alt="Twitter/X" style="background:transparent;width:30px;height:25px"></a>
+						<a href="https://bsky.app/profile/jack-the-villain.bsky.social"><img src="https://upload.wikimedia.org/wikipedia/commons/7/7a/Bluesky_Logo.svg" alt="Bluesky" style="background:transparent;width:30px;height:25px"></a>
+					</p>
+					<img src="images/Italy_map_high_res.png" alt="Map of Italy showing my research connections" class="map-image">
+				</article>
 
 			</div>
 
+		</div>
+
+		<!-- Footer -->
+		<div id="footer">
+			<ul class="copyright">
+				<li>Content licensed under <a href="https://creativecommons.org/licenses/by-nc-sa/3.0/" target="_blank">CC BY-NC-SA 3.0</a>.</li>
+				<li>Design: <a href="http://html5up.net">HTML5 UP</a></li>
+			</ul>
+			<p class="motto">Memento: homo eras et es et eris</p>
+			<!-- Contatore visitatori -->
+			<div id="sfcfungl1awba4c8hl44cz1kyxux74b3wpe"></div>
+			<script type="text/javascript" src="https://counter6.optistats.ovh/private/counter.js?c=fungl1awba4c8hl44cz1kyxux74b3wpe&FCS_rest=tabRB"></script>
+			<noscript><a href="https://www.contatoreaccessi.com" title="contatore internet"><img src="https://counter6.optistats.ovh/private/contatoreaccessi.php?c=fungl1awba4c8hl44cz1kyxux74b3wpe" border="0" alt="contatore internet"></a></noscript>
+		</div>
+
 		<!-- Scripts -->
-			<script src="assets/js/jquery.min.js"></script>
-			<script src="assets/js/browser.min.js"></script>
-			<script src="assets/js/breakpoints.min.js"></script>
-			<script src="assets/js/util.js"></script>
-			<script src="assets/js/main.js"></script>
+		<script src="assets/js/jquery.min.js"></script>
+		<script src="assets/js/browser.min.js"></script>
+		<script src="assets/js/breakpoints.min.js"></script>
+		<script src="assets/js/util.js"></script>
+		<script src="assets/js/main.js"></script>
+
+		<!-- Language Switcher Script -->
+		<script>
+		const translations = {
+			en: {
+				nav_home: "Home",
+				nav_research: "Research",
+				nav_scipub: "Scientific Publications",
+				nav_litpub: "Literary Publications",
+				nav_honours: "Honours and Awards",
+				nav_contact: "Contact",
+				subtitle: "PhD student in Archaeogenomics, Writer",
+				see_research: "See my research",
+				research_title: "Research",
+				research_p1: "I am a PhD student specializing in population genomics, both on nuclear genome and mitochondrial DNA.<br>My interests are:<br>- The evolution of humankind from our common ancestor with chimpanzee and bonobo;<br>- Our history as humans after our exit from Africa in forming our current populations and diversity.",
+				research_p2: "To do that I explore the maternal history that we can infer from our mitochondria, and how current mtDNA lineages have spread in various populations. To uncover the general history of a population instead, I focus on patterns of kinship, ancestry, and geographic distribution that I can infer from complete genomes by combining cutting-edge bioinformatics tools with statistical analysis.",
+				research_p3: "My aim is to uncover the connections between genetic data and human history, contributing to our understanding of evolution, migration and not recorded history.",
+				networks_title: "Networks and Memberships",
+				member_isbarch: "Member · 29/03/2025 – Current",
+				member_sibe: "Member · 08/05/2025 – Current",
+				member_smbe: "Member · 02/02/2026 – Current",
+				conferences_title: "Conferences and Seminars",
+				poster_presentation: "Poster presentation",
+				courses_title: "Courses and Advanced Training",
+				poster_course: "Poster presentation at the course",
+				scipub_title: "Scientific Publications",
+				equal_contrib: "† These authors contributed equally to this work.",
+				thirdmission_title: "Third Mission",
+				divulgative_article: "Divulgative article",
+				read_article: "Read the full article",
+				sicily_title: "\"Sicily: from fifteen millennia ago to present\"",
+				litpub_title: "Literary Publications",
+				anthology_title: "IMAGINE A UNIVERSE, INFINITE OR NOT, AS YOU WISH",
+				anthology_desc: "Anthology of stories from the \"Premio Fredric Brown, 1st Edition\" VOL. 2.",
+				various_authors: "Various authors.",
+				pages: "Pages",
+				story_label: "Story",
+				story_title: "\"The Cloud Climber\"",
+				creative_title: "Creative Writing",
+				monica_frascari: "Fiction award Monica Frascari:",
+				honour_mention: "honour mention",
+				literary_prize: "National literary prize \"Terra di Guido Cavani\":",
+				junior_fourth: "junior section, fourth place",
+				certamen: "Participation in IV Certamen of Italian History and Literature of Venaria Reale",
+				honours_title: "Honours and Awards",
+				degree_award: "Degree Merit Award",
+				contacts_title: "Contacts",
+				institution_label: "Institution",
+				socials_label: "Socials",
+			},
+			it: {
+				nav_home: "Home",
+				nav_research: "Ricerca",
+				nav_scipub: "Pubblicazioni Scientifiche",
+				nav_litpub: "Pubblicazioni Letterarie",
+				nav_honours: "Premi e Riconoscimenti",
+				nav_contact: "Contatti",
+				subtitle: "Dottorando in Archeogenomica, Scrittore",
+				see_research: "Vedi la mia ricerca",
+				research_title: "Ricerca",
+				research_p1: "Sono un dottorando specializzato in genomica delle popolazioni, sia sul genoma nucleare che sul DNA mitocondriale.<br>I miei interessi sono:<br>- L'evoluzione dell'umanità dal nostro antenato comune con scimpanzé e bonobo;<br>- La nostra storia come esseri umani dopo l'uscita dall'Africa nel formare le attuali popolazioni e la loro diversità.",
+				research_p2: "Per farlo esploro la storia materna che possiamo inferire dai mitocondri e come i lignaggi mtDNA attuali si sono diffusi nelle varie popolazioni. Per ricostruire la storia generale di una popolazione mi concentro su parentela, ascendenza e distribuzione geografica inferibili dai genomi completi, combinando strumenti bioinformatici avanzati con analisi statistiche.",
+				research_p3: "Il mio obiettivo è svelare le connessioni tra dati genetici e storia umana, contribuendo alla comprensione dell'evoluzione, delle migrazioni e della storia non documentata.",
+				networks_title: "Reti e Affiliazioni",
+				member_isbarch: "Membro · 29/03/2025 – In corso",
+				member_sibe: "Membro · 08/05/2025 – In corso",
+				member_smbe: "Membro · 02/02/2026 – In corso",
+				conferences_title: "Conferenze e Seminari",
+				poster_presentation: "Presentazione poster",
+				courses_title: "Corsi e Formazione Avanzata",
+				poster_course: "Presentazione poster al corso",
+				scipub_title: "Pubblicazioni Scientifiche",
+				equal_contrib: "† Questi autori hanno contribuito in egual misura al lavoro.",
+				thirdmission_title: "Terza Missione",
+				divulgative_article: "Articolo divulgativo",
+				read_article: "Leggi l'articolo completo",
+				sicily_title: "\"Sicilia: da quindicimila anni fa ad oggi\"",
+				litpub_title: "Pubblicazioni Letterarie",
+				anthology_title: "IMMAGINATEVI UN UNIVERSO, INFINITO O NO, A PIACERE VOSTRO",
+				anthology_desc: "Antologia di racconti del \"Premio Fredric Brown, 1ª Edizione\" VOL. 2.",
+				various_authors: "Autori vari.",
+				pages: "Pagine",
+				story_label: "Racconto",
+				story_title: "\"Lo scalatore di nuvole\"",
+				creative_title: "Scrittura Creativa",
+				monica_frascari: "Premio letterario Monica Frascari:",
+				honour_mention: "menzione d'onore",
+				literary_prize: "Premio letterario nazionale \"Terra di Guido Cavani\":",
+				junior_fourth: "sezione giovani, quarto classificato",
+				certamen: "Partecipazione al IV Certamen di Storia e Letteratura Italiana della città di Venaria Reale",
+				honours_title: "Premi e Riconoscimenti",
+				degree_award: "Premio di Merito di Laurea",
+				contacts_title: "Contatti",
+				institution_label: "Istituzione",
+				socials_label: "Social",
+			}
+		};
+
+		function setLang(lang) {
+			document.querySelectorAll('[data-i18n]').forEach(el => {
+				const key = el.getAttribute('data-i18n');
+				if (translations[lang][key]) {
+					el.innerHTML = translations[lang][key];
+				}
+			});
+			document.getElementById('flag-en').style.opacity = lang === 'en' ? '1' : '0.4';
+			document.getElementById('flag-it').style.opacity = lang === 'it' ? '1' : '0.4';
+			localStorage.setItem('lang', lang);
+		}
+
+		window.addEventListener('DOMContentLoaded', () => {
+			document.getElementById('flag-en').addEventListener('click', () => setLang('en'));
+			document.getElementById('flag-it').addEventListener('click', () => setLang('it'));
+			const saved = localStorage.getItem('lang') || 'en';
+			setLang(saved);
+		});
+		</script>
 
 	</body>
 </html>
-
-
-
