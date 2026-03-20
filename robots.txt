@@ -1,0 +1,4 @@
+User-agent: *
+Allow: /
+
+Sitemap: https://giacomovillani.github.io/sitemap.xml
