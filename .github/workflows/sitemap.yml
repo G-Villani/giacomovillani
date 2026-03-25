@@ -19,6 +19,9 @@ jobs:
         with:
           base-url-path: https://giacomovillani.github.io
           include-html: true
+          include: |
+          index.html
+          sicily-article.html
 
       - name: Commit sitemap.xml
         run: |
