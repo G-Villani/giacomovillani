@@ -4,7 +4,10 @@ on:
   push:
     branches: [ "main" ]
   schedule:
-    - cron: "0 3 * * *"  # ogni giorno (UTC)
+    - cron: "0 3 * * *"
+
+permissions:
+  contents: write
 
 jobs:
   sitemap:
@@ -18,8 +21,7 @@ jobs:
         uses: cicirello/generate-sitemap@v1
         with:
           base-url-path: https://giacomovillani.github.io
-          include-html: true
-          include: |
+          args: >
             index.html
             sicily-article.html
 
